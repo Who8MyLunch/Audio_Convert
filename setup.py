@@ -1,10 +1,7 @@
 
-from distribute_setup import use_setuptools
-use_setuptools()
-
 from setuptools import setup, find_packages
 
-version = '2012.05.01'
+version = '1.0.0'
 
 entry_points = {'console_scripts': ['audio_convert = audio_convert.ffmpeg_audio:main_convert',
                                    ]}
@@ -21,6 +18,7 @@ setup(name='audio_convert',
       version=version,
       author='Pierre V. Villeneuve',
       author_email='pierre.villeneuve@gmail.com',
+      url='https://github.com/Who8MyLunch/Audio_Convert',
       description='Convert audio files using ffmpeg',
 )
 
