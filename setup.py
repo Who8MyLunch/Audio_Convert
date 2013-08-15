@@ -5,14 +5,15 @@ version = '1.0.0'
 
 entry_points = {'console_scripts': ['audio_convert = audio_convert.ffmpeg_audio:main_convert',
                                    ]}
+install_requires = ['mutagen']
 
 # Do it.
 setup(name='audio_convert',
       packages=find_packages(),
-      package_data={'': ['*.txt',
-                         ]},
+      package_data={'': ['*.txt']},
 
       entry_points=entry_points,
+      install_requires=install_requires,
 
       # Metadata
       version=version,
